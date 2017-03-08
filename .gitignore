@@ -254,3 +254,5 @@ paket-files/
 # Ignore scripts compiled from TypeScript
 **/Content/Scripts/**/*.map
 **/Content/Scripts/**/*.js
+**/Scripts/jasmine-tests/**/*.map
+**/Scripts/jasmine-tests/**/*.js
