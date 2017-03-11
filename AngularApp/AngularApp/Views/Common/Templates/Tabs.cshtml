@@ -1,0 +1,8 @@
+﻿<div class="tabs">
+    <ul class="tabs-list">
+        <li ng-repeat="tab in tabsCtrl.tabs">
+            <a href="" ng-bind="tab.label" ng-click="tabsCtrl.selectTab($index);"></a>
+        </li>
+    </ul>
+    <div class="tabs-content" ng-transclude></div>
+</div>
