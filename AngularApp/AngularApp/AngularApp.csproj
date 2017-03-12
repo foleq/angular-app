@@ -262,6 +262,7 @@
     <TypeScriptCompile Include="Scripts\jasmine-tests\App\Controllers\ResultControllerSpecs.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsControllerSpecs.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsDirectiveSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-helpers\DirectivesTestHelper.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
