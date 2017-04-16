@@ -78,14 +78,24 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExampleSpecs.cs" />
+    <Compile Include="Extensions\AssertionExtensions.cs" />
+    <Compile Include="Fakes\FakeConfiguration.cs" />
+    <Compile Include="Fakes\FakeSearcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ItemRepositorySpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AngularApp\AngularApp.csproj">
+      <Project>{69DA17E7-F844-4F34-AEB3-42BA457C8D06}</Project>
+      <Name>AngularApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

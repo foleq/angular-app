@@ -1,20 +1,31 @@
 ﻿using AngularApp.Models;
+using AngularApp.Repositories;
+using System.Diagnostics;
 using System.Web.Mvc;
 
 namespace AngularApp.Controllers
 {
     public class HomeController : Controller
     {
-        private IMessageProvider _messageProvider;
+        private IItemsRepository _itemsRepository;
 
-        public HomeController(IMessageProvider messageProvider)
+        public HomeController(IItemsRepository itemsRepository)
         {
-            _messageProvider = messageProvider;
+            _itemsRepository = itemsRepository;
         }
 
         public ActionResult Index()
         {
-            ViewBag.Message = _messageProvider.GetMessage();
+            var s1 = Stopwatch.StartNew();
+            var paramters = new SearchParameters()
+            {
+                NumberOfItems = 114,
+                Offset = 0
+            };
+            var result = _itemsRepository.FetchItemsInParallel(paramters);
+            s1.Stop();
+            ViewBag.Message = string.Format("{0}s", s1.Elapsed.Seconds);
+
             return View();
         }
     } 

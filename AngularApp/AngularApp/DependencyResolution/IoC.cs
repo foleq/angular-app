@@ -11,7 +11,7 @@ namespace AngularApp.DependencyResolution {
         private static void Register(ConfigurationExpression c)
         {
             c.AddRegistry<DefaultRegistry>();
-            c.For<IMessageProvider>().Use<MessageProvider>();
+            c.AddRegistry<AppRegistry>();
         }
     }
 }
