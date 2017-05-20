@@ -256,3 +256,5 @@ paket-files/
 **/Content/Scripts/**/*.js
 **/Scripts/jasmine-tests/**/*.map
 **/Scripts/jasmine-tests/**/*.js
+**/Scripts/jasmine-helpers/**/*.map
+**/Scripts/jasmine-helpers/**/*.js

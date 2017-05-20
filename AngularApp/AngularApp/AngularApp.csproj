@@ -171,6 +171,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Controllers\DirectivesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JasmineController.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
@@ -190,6 +191,7 @@
     <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Styles\tabs.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -235,6 +237,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Jasmine\SpecRunner.cshtml" />
+    <Content Include="Views\Common\Templates\Tabs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,7 +256,13 @@
     <TypeScriptCompile Include="Content\Scripts\AppSetupBegin.ts" />
     <TypeScriptCompile Include="Content\Scripts\AppSetupEnd.ts" />
     <TypeScriptCompile Include="Content\Scripts\App\Controllers\ResultController.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabDirective.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsController.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsDirective.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\App\Controllers\ResultControllerSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsControllerSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsDirectiveSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-helpers\DirectivesTestHelper.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

@@ -29,7 +29,9 @@ namespace AngularApp
                 .Include("~/Content/Scripts/AppSetupBegin.js")
                 //#########################################################################################
 
-                .Include("~/Content/Scripts/App/Controllers/*.js")
+                .IncludeDirectory("~/Content/Scripts/Common", "*.js", true)
+
+                .IncludeDirectory("~/Content/Scripts/App/Controllers", "*.js", true)
 
                 //#########################################################################################
                 .Include("~/Content/Scripts/AppSetupEnd.js")
@@ -37,7 +39,8 @@ namespace AngularApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/Styles/tabs.css"));
         }
     }
 }
