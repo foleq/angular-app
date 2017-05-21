@@ -14,6 +14,7 @@
     </tabs>
 
     <div ng-controller="resultController as resultCtrl">
-        {{resultCtrl.title}}
+        <dynamic-accordions accordions="resultCtrl.accordions"></dynamic-accordions>
+        <accordion label="Static Title">Static content</accordion>
     </div>
 </div>

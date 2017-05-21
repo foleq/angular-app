@@ -2,10 +2,12 @@
 
     export class ResultController {
 
-        title: string;
+        public title: string;
+        public accordions: Common.Accordion.IAccordion[];
 
-        constructor() {
-            this.title = "Hello world!"
+        constructor(private customAccordionsProvider: App.Providers.ICustomAccordionsProvider) {
+            this.title = "Hello world!";
+            this.accordions = this.customAccordionsProvider.getAccordions();
         }
     }
 }

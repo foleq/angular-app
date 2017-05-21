@@ -27,6 +27,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -262,6 +263,9 @@
     <TypeScriptCompile Include="Content\Scripts\AppSetupBegin.ts" />
     <TypeScriptCompile Include="Content\Scripts\AppSetupEnd.ts" />
     <TypeScriptCompile Include="Content\Scripts\App\Controllers\ResultController.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\Accordion\AccordionDirective.ts" />
+    <TypeScriptCompile Include="Content\Scripts\App\Providers\CustomAccordionsProvider.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\Accordion\DynamicAccordion.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabDirective.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsController.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsDirective.ts" />
