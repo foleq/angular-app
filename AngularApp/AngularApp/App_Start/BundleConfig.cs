@@ -31,7 +31,7 @@ namespace AngularApp
 
                 .IncludeDirectory("~/Content/Scripts/Common", "*.js", true)
 
-                .IncludeDirectory("~/Content/Scripts/App/Controllers", "*.js", true)
+                .IncludeDirectory("~/Content/Scripts/App", "*.js", true)
 
                 //#########################################################################################
                 .Include("~/Content/Scripts/AppSetupEnd.js")
