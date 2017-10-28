@@ -263,6 +263,12 @@
     <TypeScriptCompile Include="Content\Scripts\AppSetupBegin.ts" />
     <TypeScriptCompile Include="Content\Scripts\AppSetupEnd.ts" />
     <TypeScriptCompile Include="Content\Scripts\App\Controllers\ResultController.ts" />
+    <TypeScriptCompile Include="Content\Scripts\App\ItemsList\ItemsListDirective.ts" />
+    <TypeScriptCompile Include="Content\Scripts\App\ItemsList\TestItemsProvider.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\PagerScroll\IPagerScrollModel.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\PagerScroll\PagerScrollController.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\PagerScroll\PagerScrollDirective.ts" />
+    <TypeScriptCompile Include="Content\Scripts\Common\PagerScroll\PagerScrollModelFactory.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Accordion\AccordionDirective.ts" />
     <TypeScriptCompile Include="Content\Scripts\App\Providers\CustomAccordionsProvider.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Accordion\DynamicAccordion.ts" />
@@ -270,6 +276,8 @@
     <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsController.ts" />
     <TypeScriptCompile Include="Content\Scripts\Common\Tabs\TabsDirective.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\App\Controllers\ResultControllerSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-tests\Common\PageScroll\PagerScrollControllerSpecs.ts" />
+    <TypeScriptCompile Include="Scripts\jasmine-tests\Common\PageScroll\PagerScrollModelFactorySpecs.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsControllerSpecs.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-tests\Common\Tabs\TabsDirectiveSpecs.ts" />
     <TypeScriptCompile Include="Scripts\jasmine-helpers\DirectivesTestHelper.ts" />
